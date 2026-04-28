@@ -8,14 +8,14 @@ export function SongList() {
   if (songs.length === 0) {
     return (
       <div className="song-list-empty">
-        <p>🎼 No songs yet. Create your first one!</p>
+        <p>Belum ada lagu. Buat lagu pertama Anda 🎼</p>
       </div>
     );
   }
 
   return (
     <div className="song-list">
-      <h2>Your Songs ({songs.length})</h2>
+      <h2>Lagu mu ({songs.length})</h2>
       <div className="songs-grid">
         {songs.map(song => (
           <SongCard
