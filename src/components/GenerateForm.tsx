@@ -15,7 +15,7 @@ export function GenerateForm() {
     e.preventDefault();
 
     if (!prompt.trim()) {
-      alert('Please enter a description for your song');
+      alert('Berikan deskripsi untuk lagu mu');
       return;
     }
 
@@ -33,12 +33,12 @@ export function GenerateForm() {
   return (
     <form className="generate-form" onSubmit={handleSubmit}>
       <div className="form-header">
-        <h2>🎵 Create Your Music</h2>
-        <p>Describe the song you want to create</p>
+        <h2>🎵 Buat musik mu</h2>
+        <p>Deskripsikan lagu yang ingin kamu ciptakan</p>
       </div>
 
       <div className="form-group">
-        <label htmlFor="prompt">Song Description</label>
+        <label htmlFor="prompt">Descripsi lagu</label>
         <textarea
           id="prompt"
           value={prompt}
